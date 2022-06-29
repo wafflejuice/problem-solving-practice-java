@@ -30,15 +30,7 @@ public class _6064_카잉_달력 {
                     break;
                 }
 
-                if (cain[0] < x) {
-                    year += x - cain[0];
-                } else if (cain[1] < y) {
-                    year += y - cain[1];
-                } else if (x < cain[0]) {
-                    year += m - cain[0] + 1;
-                } else {
-                    year += n - cain[1] + 1;
-                }
+                year += m;
             }
 
             System.out.println(answer);
