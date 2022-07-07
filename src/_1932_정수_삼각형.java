@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class _1932_정수_삼각 {
+public class _1932_정수_삼각형 {
 
     public static void main(String[] args) throws IOException {
 
