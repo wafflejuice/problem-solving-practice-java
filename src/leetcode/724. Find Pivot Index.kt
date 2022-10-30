@@ -1,7 +1,5 @@
 package leetcode
 
-import kotlin.test.assertEquals
-
 fun pivotIndex(nums: IntArray): Int {
     val size = nums.size
 
@@ -29,7 +27,7 @@ fun pivotIndex(nums: IntArray): Int {
 }
 
 fun main() {
-    assertEquals(3, pivotIndex(intArrayOf(1,7,3,6,5,6)))
-    assertEquals(-1, pivotIndex(intArrayOf(1,2,3)))
-    assertEquals(0, pivotIndex(intArrayOf(2,1,-1)))
+    assert(3 == pivotIndex(intArrayOf(1,7,3,6,5,6)))
+    assert(-1 ==pivotIndex(intArrayOf(1,2,3)))
+    assert(0 == pivotIndex(intArrayOf(2,1,-1)))
 }

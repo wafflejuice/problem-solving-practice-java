@@ -1,7 +1,5 @@
 package leetcode
 
-import kotlin.test.assertContentEquals
-
 fun runningSum(nums: IntArray): IntArray {
     var acc = 0
     return nums.map {
@@ -11,7 +9,7 @@ fun runningSum(nums: IntArray): IntArray {
 }
 
 fun main() {
-    assertContentEquals(runningSum(listOf(1,2,3,4).toIntArray()), listOf(1,3,6,10).toIntArray())
-    assertContentEquals(runningSum(listOf(1,1,1,1,1).toIntArray()), listOf(1,2,3,4,5).toIntArray())
-    assertContentEquals(runningSum(listOf(3,1,2,10,1).toIntArray()), listOf(3,4,6,16,17).toIntArray())
+    assert(runningSum(listOf(1,2,3,4).toIntArray()).contentEquals(listOf(1,3,6,10).toIntArray()))
+    assert(runningSum(listOf(1,1,1,1,1).toIntArray()).contentEquals(listOf(1,2,3,4,5).toIntArray()))
+    assert(runningSum(listOf(3,1,2,10,1).toIntArray()).contentEquals(listOf(3,4,6,16,17).toIntArray()))
 }
