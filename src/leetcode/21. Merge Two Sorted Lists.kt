@@ -1,6 +1,6 @@
 package leetcode
 
-class ListNode(var `val`: Int, var next: ListNode? = null)
+import leetcode.DataStructure.ListNode
 
 /**
  * Example:
